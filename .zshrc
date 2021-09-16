@@ -68,7 +68,8 @@ ZSH_THEME="random"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(autojump gitfast common-aliases jump pip safe-paste vi-mode virtualenvwrapper colored-man-pages copybuffer)
+plugins=(gitfast common-aliases jump safe-paste vi-mode colored-man-pages copybuffer)
+# autojump pip virtualenvwrapper
 
 source $ZSH/oh-my-zsh.sh
 
