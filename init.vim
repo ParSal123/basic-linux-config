@@ -22,6 +22,7 @@ autocmd FileType html :set iskeyword+=45
 nn <A-l> :bn<CR>
 nn <A-h> :bN<CR>
 
-call plug#begin()
+" vim-plug
+" call plug#begin()
 " Load your plugins here
-call plug#end()
+" call plug#end()
