@@ -69,7 +69,21 @@ COMPLETION_WAITING_DOTS="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(gitfast common-aliases jump safe-paste vi-mode colored-man-pages tmux)
-# autojump pip virtualenvwrapper
+## Enable these if needed
+# autoupdate
+## Explanation
+# gitfast: Git completion
+# common-aliases: Handy aliases for terminal
+# jump: You can mark and jump to directories in system
+# safe-paste: Paste doesn't run commands
+# vi-mode: Use vi key bindins in terminal
+# colored-man-pages: No comment!
+# tmux: Start tmux when opening terminal
+# autoupdate: Autoupdates ZSH_CUSTOM directory when oh-my-zsh does its update.
+
+# Preferred editor for local and remote sessions
+# This is set before sourcing "oh-my-zsh.sh" because tmux key bindings depend on EDITOR variable (vim style).
+export EDITOR='nvim'
 
 # Tmux plugin
 export ZSH_TMUX_AUTOSTART=true
@@ -86,9 +100,6 @@ source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
-
-# Preferred editor for local and remote sessions
-export EDITOR='nvim'
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
