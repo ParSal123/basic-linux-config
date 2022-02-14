@@ -98,6 +98,9 @@ export ZSH_TMUX_AUTOCONNECT=false
 # Don't close the terminal after exiting tmux
 export ZSH_TMUX_AUTOQUIT=false
 
+# Export nvm completion settings for zsh-nvm plugin
+# export NVM_COMPLETION=true
+
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
