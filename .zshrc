@@ -1,3 +1,6 @@
+# Activate ssh-agent for current session if needed.
+# eval $(ssh-agent -s)
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -70,7 +73,7 @@ COMPLETION_WAITING_DOTS="true"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(gitfast common-aliases jump safe-paste vi-mode colored-man-pages tmux)
 ## Enable these if needed
-# autoupdate pip docker
+# autoupdate pip docker zsh-nvm
 ## Explanation
 # gitfast: Git completion
 # common-aliases: Handy aliases for terminal
@@ -79,9 +82,10 @@ plugins=(gitfast common-aliases jump safe-paste vi-mode colored-man-pages tmux)
 # vi-mode: Use vi key bindins in terminal
 # colored-man-pages: No comment!
 # tmux: Start tmux when opening terminal
-# autoupdate: Autoupdates ZSH_CUSTOM directory when oh-my-zsh does its update.
+# autoupdate: Autoupdates ZSH_CUSTOM directory when oh-my-zsh does its update. (custom plugin)
 # pip: pip auto completion
 # docker: docker auto completion
+# zsh-nvm: automatically install and manage nvm (node version manager). (custom plugin)
 
 # Preferred editor for local and remote sessions
 # This is set before sourcing "oh-my-zsh.sh" because tmux key bindings depend on EDITOR variable (vim style).
