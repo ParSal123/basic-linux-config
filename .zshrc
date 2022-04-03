@@ -82,10 +82,12 @@ plugins=(gitfast common-aliases jump safe-paste vi-mode colored-man-pages tmux)
 # vi-mode: Use vi key bindins in terminal
 # colored-man-pages: No comment!
 # tmux: Start tmux when opening terminal
-# autoupdate: Autoupdates ZSH_CUSTOM directory when oh-my-zsh does its update. (custom plugin)
 # pip: pip auto completion
 # docker: docker auto completion
-# zsh-nvm: automatically install and manage nvm (node version manager). (custom plugin)
+# Custom Plugins:
+# autoupdate: Autoupdates ZSH_CUSTOM directory when oh-my-zsh does its update.
+# zsh-docker-aliases: Some useful docker aliases for terminal.
+# zsh-nvm: automatically install and manage nvm (node version manager).
 
 # Preferred editor for local and remote sessions
 # This is set before sourcing "oh-my-zsh.sh" because tmux key bindings depend on EDITOR variable (vim style).
