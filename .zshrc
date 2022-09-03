@@ -1,5 +1,5 @@
 # Activate ssh-agent for current session if needed.
-# eval $(ssh-agent -s)
+eval $(ssh-agent -s)
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
@@ -71,7 +71,8 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(gitfast common-aliases jump safe-paste vi-mode colored-man-pages tmux)
+plugins=(gitfast common-aliases jump safe-paste vi-mode colored-man-pages tmux
+	autoupdate)
 ## Enable these if needed
 # autoupdate pip docker zsh-nvm
 ## Explanation
@@ -84,7 +85,9 @@ plugins=(gitfast common-aliases jump safe-paste vi-mode colored-man-pages tmux)
 # tmux: Start tmux when opening terminal
 # pip: pip auto completion
 # docker: docker auto completion
+# docker-compose: docker compose auto completion
 # Custom Plugins:
+# poetry: Poetry completion. See python-poetry website for more info.
 # autoupdate: Autoupdates ZSH_CUSTOM directory when oh-my-zsh does its update.
 # zsh-docker-aliases: Some useful docker aliases for terminal.
 # zsh-nvm: automatically install and manage nvm (node version manager).
@@ -107,6 +110,9 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
+# Configure GPG_TTY for signing git commits
+export GPG_TTY=$(tty)
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -123,3 +129,6 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
